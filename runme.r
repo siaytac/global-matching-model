@@ -6,7 +6,6 @@ graphics.off() # clean the plots
 # load the functions you will need to get the model's predictions
 source("model.R") # the Osth & Dennis (2015) model function get the means and variances of the distributions
 source("afc.R") # find accuracy on a kAFC task
-source("afcR.R") # find accuracy on a kAFC* task (where there's one new item & and multiple old items)
 source("tpe.R") # test position effect
 
 # set up the parameters 
