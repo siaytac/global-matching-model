@@ -7,9 +7,7 @@ graphics.off()
 source("model-source.R") # Osth et al. (2018) Source Memory Model 
 source("lcu.R") # the function to find criterion on LR scale 
 source("tpe-source.R") # test position effect for source memory
-
-# convert d-prime to accuracy
-kafc <- function(d,k) integrate(function(x,d,k) dnorm(x,d)*pnorm(x)**(k-1), -Inf, Inf, d=d,k=k)$value
+source("../afc.R") # convert dp to accuracy
 
 # set the parameters                             
 ll <- 48 # study list length
