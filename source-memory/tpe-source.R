@@ -19,13 +19,6 @@ tpeSource <- function(ll, lltest, ritem, rsource, nitem, Mss, contextDrift, k) {
     
     pc[i] <- kafc(dsource, 2)
     
-    #Alternative: Osth et al. (2018) Source Memory Paper - Equations
-    # mua <- dsource^2/2
-    # mub <- -dsource^2/2
-    # va <- vb <- dsource^2 #variance
-    #
-    # pc[i] <- 1-pnorm((mub-mua)/sqrt(va+vb))
-    
     #context drift account
     ll <- ll+k #add k alternatives
     Mss <- Mss*contextDrift
