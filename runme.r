@@ -11,9 +11,9 @@ source("tpe.R") # test position effect
 # set up the parameters 
 ll <- 50 # study list length
 lltest <- 50 # test list length
-Mss <- 1 #mean context match
-contextDrift <- .9955 #.9985
-k <- 2 #alternative choices in each trial (1 if yes-no; k if kafc)
+Mss <- 1 # mean context match
+contextDrift <- .9955 
+k <- 2 # alternative choices in each trial (1 if yes-no; k if kafc)
 
 ritem <- seq(0.3, 1.2, by=0.3) # learning rate(s) 
 
