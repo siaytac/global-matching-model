@@ -55,6 +55,8 @@ if (k == 1) { # yes-no recognition task
   
   } else { # kAFC task
   plot(c(1:nblock), acc[1,], ylim=c(0,1), xlab="Test Block", ylab="Accuracy",
-       type="b", pch=19, col="gray1", main=paste0(k, "-Alternative Forced-Choice Task")) 
+         type="b", pch=19, col="gray1", main=paste0(k, "-Alternative Forced-Choice Task")) 
   for (i in 1:3) { points(c(1:nblock), acc[i+1,], type="b", pch=19, col=cols[i]) }
+  
+  legend(legend=c(paste("r =", ritem)), pch=19, col=c("gray1", cols), "bottomright")
   }
