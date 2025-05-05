@@ -43,6 +43,6 @@ tpe <- function(ll, lltest, Mss, contextDrift, k, ritem) {
                        , preds=list(hr=hr,fr=fr) )}
       else { list(params=list(LL=ll, LLtest=lltest, Mss=Mss, contextDrift=contextDrift, Mtt=1, Vss=.1, Vtt=.01, Vti=.0005, p=.05, beta=.05, r=ritem)
                   , task=list(k=k)
-                  , preds=pc) }
+                  , preds=list(acc=pc)) }
   )
 }
