@@ -16,7 +16,7 @@ Mss <- 1 #mean context match
 contextDrift <- .9955 #.9985
 k <- 2 #alternative choices in each trial (1 if yes-no; k if kafc)
 
-ritem <- c(0.3,0.6,0.9,1.2) # learning rate(s) 
+ritem <- seq(0.3, 1.2, by=0.3) # learning rate(s) 
 
 hr <- fr <- pc <- matrix(NA, nrow=length(ritem), lltest) # create empty matrices to save the predictions
 
@@ -36,7 +36,7 @@ for (j in 1:nblock) {
   if (k == 1) {
     hh[,j] <- rowMeans(preds$hr[,(1+per*(j-1)):(per*j)])
     ff[,j] <- rowMeans(preds$fr[,(1+per*(j-1)):(per*j)])
-  } else { acc[,j] <- rowMeans(preds[,(1+per*(j-1)):(per*j)]) }
+  } else { acc[,j] <- rowMeans(preds$acc[,(1+per*(j-1)):(per*j)]) }
 }
 
 
