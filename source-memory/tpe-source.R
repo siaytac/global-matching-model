@@ -17,7 +17,7 @@ tpeSource <- function(ll, lltest, ritem, rsource, nitem, Mss, contextDrift, k) {
     #source memory
     dsource <- (d[5]-d[6])/sqrt(d[7]) #(ma-mb)/sqrt(va) or sqrt(vb) because equal variance
     
-    pc[i] <- kafc(dsource, 2)
+    pc[i] <- afc(dsource, 1, 0, 1, k=2)
     
     #context drift account
     ll <- ll+k #add k alternatives
