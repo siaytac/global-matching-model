@@ -2,6 +2,8 @@ rm(list=ls())
 graphics.off()
 
 # set the working directory
+my.dir <- ""
+setwd(my.dir)
 
 # load the functions you need to get the model's predictions
 source("model-source.R") # Osth et al. (2018) Source Memory Model 
