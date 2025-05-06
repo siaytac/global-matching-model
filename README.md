@@ -9,6 +9,7 @@ This repository implements the Global Matching Model (GMM) from Osth & Dennis (2
 
 ## Getting Started
 To generate predictions, run the runme.R script after adjusting the parameters and task design as needed.
+
 For theoretical background on the model, please refer to:
 - Osth & Dennis (2015). Psychological Review.
 
