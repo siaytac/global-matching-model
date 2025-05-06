@@ -2,6 +2,8 @@ rm(list=ls()) # clean the global environment
 graphics.off() # clean the plots
 
 # set up the working directory
+my.dir <- ""
+setwd(my.dir)
 
 # load the functions you will need to get the model's predictions
 source("model.R") # the Osth & Dennis (2015) model function get the means and variances of the distributions
