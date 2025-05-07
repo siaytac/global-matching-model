@@ -60,14 +60,6 @@ osthSource <- function(l,ritem,rsource,nitem,Mss,Mtt,Maa,Mbb,Vss,Vtt,Vti,Vsu,Vaa
     mb*(Vti*Vsu*(Vaa + Maa^2))                  + # background noise
     mc*(Vti*Vsu*Vac)                              # background noise
   
-  
-  #Source A and Source B for lures (if needed to predict these judgments for lures)
-  # ma0 <- 0 
-  # mb0 <- 0
-  # va0 
-  # vb0
-  
-  
   #Old-New Distributions
   mOld <- ritem*Mtt*Mss
   mNew <- 0
