@@ -5,7 +5,7 @@ tpe <- function(ll, lltest, Mss, Mtt, Vss, Vtt, Vti, p, beta, contextDrift, k, r
     
     d <- osth(l=ll, ritem=ritem, Mss=Mss, Mtt=Mtt, Vss=Vss, Vtt=Vtt, Vti=Vti, p=p, beta=beta)
     
-    # Fox & Osth (2023) Equations for LLR Transformation
+    # LLR Transformation
     dp  <- as.numeric(d[1]/sqrt(d[4]))
     var <- as.numeric(d[3]/d[4])
     
