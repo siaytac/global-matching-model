@@ -23,11 +23,9 @@ tpe <- function(ll, lltest, Mss, Mtt, Vss, Vtt, Vti, p, beta, contextDrift, k, r
       
     } else { pc[i] <- afc(muo,sdo,mun,sdn,k) }
     
-    #context drift account
-    ll <- ll+k #add k alternatives
-    Mss <- Mss*contextDrift^k #drift in context due to recognition testing
-    #lmbd <- lmbd+0.001 #For the Kilic et al. (2017) data - people becoming more conservative throughout the test
-    
+    # context drift account
+    ll <- ll+k # add k alternatives to the list
+    Mss <- Mss*contextDrift^k # drift in the context due to retrieval attempt(s)    
   }
   
   return(
