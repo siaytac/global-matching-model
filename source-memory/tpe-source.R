@@ -2,8 +2,7 @@ tpeSource <- function(ll, lltest, ritem, rsource, nitem, k, Mss, contextDrift, M
 
   for (i in 1:(lltest)) { 
     
-    d <- osthSource(l=ll, ritem=ritem, rsource=rsource, nitem=nitem, Mss=Mss, Mtt=Mtt, Maa=Maa, Mbb=Mbb, 
-                    Vss=Vss, Vtt=Vtt, Vti=Vti, Vsu=Vsu, Vaa=Vaa, Vbb=Vbb, Vab=Vab, Vba=Vba, Vac=Vac, Vbc=Vbc)
+    d <- osthSource(l=ll, ritem=ritem, rsource=rsource, nitem=nitem, Mss=Mss, Mtt=Mtt, Maa=Maa, Mbb=Mbb, Vss=Vss, Vtt=Vtt, Vti=Vti, Vsu=Vsu, Vaa=Vaa, Vbb=Vbb, Vab=Vab, Vba=Vba, Vac=Vac, Vbc=Vbc)
     
     #item recognition
     muo <- d[1]/sqrt(d[4])
@@ -21,7 +20,7 @@ tpeSource <- function(ll, lltest, ritem, rsource, nitem, k, Mss, contextDrift, M
     
     #context drift account
     ll <- ll+k #add k alternatives
-    Mss <- Mss*contextDrift
+    Mss <- Mss*contextDrift^k
     
   }
   
