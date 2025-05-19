@@ -1,7 +1,7 @@
 rm(list=ls()) # clean the global environment
 graphics.off() # clean the plots
 
-# set up the working directory
+# set the working directory
 my.dir <- ""
 setwd(my.dir)
 
@@ -10,7 +10,7 @@ source("model.R") # the Osth & Dennis (2015) model function get the means and va
 source("afc.R") # find accuracy on a kAFC task
 source("tpe.R") # test position effect
 
-# set up the parameters 
+# set the parameters 
 ll <- 50 # study list length
 lltest <- 50 # test list length
 Mss <- 1 # mean context match
