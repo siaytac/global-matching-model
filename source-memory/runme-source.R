@@ -25,4 +25,6 @@ rsource <- 0.5 # learning rate for context/source
 hr <- fr <- pc <- c() # save the model's predictions
 
 # run the simulation                           
-simulations <- tpeSource(ll=ll, lltest=lltest, ritem=ritem, rsource=rsource, nitem=nitem, Mss=Mss, contextDrift=contextDrift, k=k)
+simulations <- tpeSource(ll=ll, lltest=lltest, ritem=ritem, rsource=rsource, nitem=nitem, k=k, Mss=Mss, contextDrift=contextDrift, 
+                         Mtt=1, Maa=0.6, Mbb=0.6, Vss=.1, Vtt=.05, Vti=.001, Vsu=.0001, Vaa=.01, Vbb=.01, Vab=.01, Vba=.01, Vac=.25, Vbc=.25)
+)
