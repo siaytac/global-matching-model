@@ -29,10 +29,10 @@ tpe <- function(ll, lltest, Mss, Mtt, Vss, Vtt, Vti, p, beta, contextDrift, k, r
   }
   
   return(
-    if (k == 1) { list(params=list(LL=ll, LLtest=lltest, Mss=Mss, contextDrift=contextDrift, Mtt=1, Vss=.1, Vtt=.01, Vti=.0005, p=.05, beta=.05, r=ritem)
+    if (k == 1) { list(params=list(LL=ll, LLtest=lltest, Mss=Mss, contextDrift=contextDrift, Mtt=Mtt, Vss=Vss, Vtt=Vtt, Vti=Vti, p=p, beta=beta, r=ritem)
                        , task=list(k=k)
                        , preds=list(hr=hr,fr=fr) )}
-    else { list(params=list(LL=ll, LLtest=lltest, Mss=Mss, contextDrift=contextDrift, Mtt=1, Vss=.1, Vtt=.01, Vti=.0005, p=.05, beta=.05, r=ritem)
+    else { list(params=list(LL=ll, LLtest=lltest, Mss=Mss, contextDrift=contextDrift, Mtt=Mtt, Vss=Vss, Vtt=Vtt, Vti=Vti, p=p, beta=beta, r=ritem)
                 , task=list(k=k)
                 , preds=list(acc=pc)) }
   )
