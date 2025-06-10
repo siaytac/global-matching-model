@@ -26,7 +26,7 @@ tpeSource <- function(ll, lltest, ritem, rsource, nitem, k, Mss, contextDrift, M
   
   return(
     list(params=list(LL=ll, LLtest=lltest, ritem=ritem, rsource=rsource, nitem=nitem, Mss=Mss, contextDrift=contextDrift,
-                     Mtt=1, Maa=0.6, Mbb=0.6, Vss=.1, Vtt=.05, Vti=.001, Vsu=.0001, Vaa=.01, Vbb=.01, Vab=.01, Vba=.01, Vac=.25, Vbc=.25)
+                     Mtt=Mtt, Maa=Maa, Mbb=Mbb, Vss=Vss, Vtt=Vtt, Vti=Vti, Vsu=Vsu, Vaa=Vaa, Vbb=Vbb, Vab=Vab, Vba=Vba, Vac=Vac, Vbc=Vbc)
          , task=list(k=k)
          , preds=list(hr=hr, fr=fr, source=pc) ) 
   )
