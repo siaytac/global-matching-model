@@ -1,5 +1,7 @@
 # Osth and Dennis (2015) Global Matching Model - Context Drift
 tpe <- function(ll, lltest, Mss, Mtt, Vss, Vtt, Vti, p, beta, contextDrift, k, ritem) {
+
+  hr <- fr <- pc <- c() # to save the model predictions
   
   for (i in 1:lltest) { 
     
