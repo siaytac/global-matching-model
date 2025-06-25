@@ -19,7 +19,5 @@ k <- 2 # alternative choices in each trial (1 if yes-no; k if kafc)
 
 ritem <- 0.6 # learning rate 
 
-hr <- fr <- pc <- c() # to save the model predictions
-
 # run the simulation
 simulation <- tpe(ll, lltest, Mss, Mtt=1, Vss=.1, Vtt=.01, Vti=.0005, p=.05, beta=.05, contextDrift, k, ritem)
